@@ -138,17 +138,14 @@ nav ul li{
 }
 #course{
     display: flex;
-    flex-direction: row;
-    padding: 20px;
+    flex-direction: column;
+    padding: 10px;
     align-items: center;
-    background-color: yellow;
+    position: relative;
+    background-color: yellowgreen;
+    z-index: 9;
+    height: 400px;
     background-image: url(asserts/pexels-photo-452738.jpeg);
-}
-#course img{
-    position: fixed;
-    width: 100%;
-    padding: 100px;
-    margin: 50px;
 }
 .feature{
     display: flex;
@@ -157,12 +154,14 @@ nav ul li{
     text-align: center;
     margin: 10px;
     padding: 100px;
+    z-index: 6;
 }
 .feature div {
     display: flex;
-    margin: 5px;
+    margin-top: 100px;
     flex-direction: row;
     justify-content: space-around;
+    z-index: 7;
 }
 .feature div article{
    display: flex;
@@ -170,8 +169,9 @@ nav ul li{
    text-align: center;
    flex-direction: column;
    background-image: url(asserts/backimgwhite.jpg);
+    box-shadow: 3px 3px 5px  grey;
    padding: 30px;
-   margin: 5px;
+   margin: 20px;
    border-radius: 5%;
 }
 .feature div article h1{
